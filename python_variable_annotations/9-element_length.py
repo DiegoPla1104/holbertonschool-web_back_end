@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Module"""
 from typing import Iterable, Sequence, List, Tuple
+"""Module"""
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
