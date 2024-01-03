@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Module"""
-from typing import Union
 from random import uniform
+from asyncio import sleep
 
 
-async def wait_random(max_delay: int = 10) -> Union[float, int]:
+async def wait_random(max_delay: int = 10):
     """Asynchronous coroutine"""
-    return uniform(0, max_delay)
+    delay = uniform(0, max_delay)
+    await sleep(delay)
+    return delay
