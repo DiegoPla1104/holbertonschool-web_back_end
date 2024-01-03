@@ -11,4 +11,4 @@ async def wait_n(n: int, max_delay: int):
         result = await wait_random(max_delay)
         dic.append(result)
         i += 1
-    return sorted(dic)
+    return dic
