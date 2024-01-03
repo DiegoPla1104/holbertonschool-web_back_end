@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from typing import List, Union
+from typing import Tuple, Union
 """Module"""
 
 
-def to_kv(k: str, v: Union[int, float]) -> tuple[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """Sums all members of the list"""
     return (k, (v * v))
